@@ -36,5 +36,9 @@ dependencies {
     compile "io.ktor:ktor-auth:$ktor_version"
     compile "io.ktor:ktor-auth-jwt:$ktor_version"
     compile "io.ktor:ktor-jackson:$ktor_version"
+
+    // AWS Cognito User Pool
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-cognitoidp', version: '1.11.656'
+
     testCompile "io.ktor:ktor-server-tests:$ktor_version"
 }
